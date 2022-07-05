@@ -1,0 +1,100 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(content='width=device-width, initial-scale=1.0', name='viewport')
+    title Welcome | Karibu Grocery Limited
+    meta(content='', name='description')
+    meta(content='', name='keywords')
+
+    // Favicon
+    link(href='/public/images/favicon-32x32.png', rel='icon')
+  
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i', rel='stylesheet')
+
+    // Vendor CSS Files
+    link(href='')
+    link(href='/animate.css/animate.min.css', rel='stylesheet')
+    link(href='/aos/aos.css', rel='stylesheet')
+    link(href='/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/bootstrap-icons/bootstrap-icons.css', rel='stylesheet')
+    link(href='/boxicons/css/boxicons.min.css', rel='stylesheet')
+    link(href='/glightbox/css/glightbox.min.css', rel='stylesheet')
+    link(href='/remixicon/remixicon.css', rel='stylesheet')
+    link(href='/swiper/swiper-bundle.min.css', rel='stylesheet')
+    link(href='/css/login.css', rel='stylesheet')
+
+    // Main CSS File
+    link(href='/css/style.css', rel='stylesheet')
+  body
+    // ======= Header =======
+    header#header.fixed-top.d-flex.align-items-center
+      .container.d-flex.align-items-center.justify-content-between
+        .logo
+          a(href='index.html')
+            img(src='/images/logo.png')
+          // Uncomment below if you prefer to use an image logo
+        h2.companyname
+          | Karibu Grocery Limited
+          strong  | Business Portal 
+        nav#navbar.navbar
+          ul
+            i.bi.bi-list.mobile-nav-toggle
+        // .navbar
+    // End Header
+    main#main
+      hr
+      // ======= Portfolio Details Section =======
+      section#portfolio-details.portfolio-details
+        .container
+          .row.gy-4
+            .col-lg-8
+              .portfolio-details-slider.swiper
+                .swiper-wrapper.align-items-center
+                  .swiper-slide
+                    img(src='/images/CarouselCorn.jpg', alt='')
+                  .swiper-slide
+                    img(src='/images/cobs-ga806d9049_1920.jpg', alt='')
+                  .swiper-slide
+                    img(src='/images/Carouselone.jpg', alt='')
+                .swiper-pagination
+            .col-lg-4
+              .portfolio-description
+                h4 We get you quality cereals
+                p
+                  | We are number one wholesale produce distributors dealing in cereals and grains.
+              .portfolio-info
+                h3.loginheader Login to get started
+                form(action='/managerpage' method='POST')
+                  ul.userlogin
+                    li
+                      input(type='text', name='username', placeholder='Username')
+                    li
+                      input(type='password', name='password', placeholder='Password')
+                    button LOGIN
+    // End #main
+    // ======= Footer =======
+    footer#footer
+      .container
+        h3(style='color:#80C41C') Karibu Grocery Limited
+        .copyright
+          | &copy; Copyright 
+          strong
+            span Karibu Grocery Limited
+          | . All Rights Reserved. Designed by 
+          a(href='#') Fredrick Okori
+    // End Footer
+    a.back-to-top.d-flex.align-items-center.justify-content-center(href='#')
+      i.bi.bi-arrow-up-short
+    // Vendor JS Files
+    script(src='/aos/aos.js')
+    script(src='/bootstrap/js/bootstrap.bundle.min.js')
+    script(src='/glightbox/js/glightbox.min.js')
+    script(src='/isotope-layout/isotope.pkgd.min.js')
+    script(src='/swiper/swiper-bundle.min.js')
+    script(src='/php-email-form/validate.js')
+    script(src='/formVal/account.js')
+
+    // Template Main JS File
+    script(src='/js/main.js')

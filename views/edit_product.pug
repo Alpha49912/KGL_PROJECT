@@ -1,0 +1,18 @@
+extends deletelayout 
+block content 
+extends editlayout
+
+block content
+  h1 #{title}
+  form(method='POST', action='/products/edit/'+product._id)
+    .form-group
+      label Title:
+      input.form-control(name='title', type='text', value=product.name)
+    .form-group
+      label Author:
+      input.form-control(name='author', type='text', value=product.price)
+    .form-group
+      label Body:
+      input.form-control(name='body')= product.body
+    br
+    input.btn.btn-primary(type='submit', value='Submit')

@@ -1,0 +1,29 @@
+extends layout
+block content
+    body.collections
+         h2 Manager Collection.
+         table.table.table-washers 
+            thead
+                tr
+                    th User Name
+                    th Email
+                    th Password
+                    th Remove 
+                    th Edit
+                    
+                 
+            tbody
+                if users.length 
+                each user in users 
+                    tr 
+                        td #{user.name}
+                        td #{user.email}
+                        td #{user.password}
+                        td 
+                            form.delete(method="post" action='/managers/delete')
+                                    input(type="hidden", placeholder="", name="id", value=user._id)
+                                    button.button2(type="submit") Remove
+                        td 
+                            form.edit(method="post" action='/managers/edit')
+                                    input(type="hidden", placeholder="", name="id", value=user._id)
+                                    button.button2(type="submit") Edit

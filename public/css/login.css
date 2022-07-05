@@ -1,0 +1,78 @@
+body{
+    background-color: #e6e4e4;
+}
+h2,
+h4 {
+    font-family: "Open Sans", sans-serif;
+    color: #2B383A;
+
+}
+ul.userlogin{
+    list-style: none;
+}
+
+
+label {
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: table-cell;
+    color: #FFFF;
+    font-size: 16px;
+
+}
+
+span#errormessage {
+    color: red;
+    font-size: 13px;
+    font-style: italic;
+}
+
+input, select, option {
+    font-family: "Open Sans", sans-serif;
+    Padding: 10px;
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #80C41C;
+
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    padding: 0px;
+    border: none;
+    background-color: #80C41C;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-left: 400px;
+    margin-top: 100px;
+    width: 58%;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+#account-header {
+    text-align: center;
+    color: #80C41C;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.loginheader {
+    background-color: #2B383A;
+    color: #80C41C;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
