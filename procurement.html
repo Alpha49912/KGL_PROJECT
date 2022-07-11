@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Procure | Karibu Grocery Limited</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicon -->
+    <link href="./public/images/favicon-32x32.png" rel="icon">
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="./public/animate.css/animate.css" rel="stylesheet">
+    <link href="./public/aos/aos.css" rel="stylesheet">
+    <link href="./" rel="stylesheet">
+    <link href="assets/kgl/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/kgl/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/kgl/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/kgl/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/kgl/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="/assets/css/business.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center ">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.png"> </a>
+                <!-- Uncomment below if you prefer to use an image logo -->
+
+            </div>
+            <h2 class="companyname"> Karibu Grocery Limited<strong> | Procurement Portal </strong></h2>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto " href="/index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="/procurement.html">Procure</a></li>
+                    <li><a class="nav-link scrollto" href="/sell.html">Sell</a></li>
+                    <li><a class="nav-link scrollto" href="/credit.html">Credit</a></li>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- <h2 class="companyname"> Karibu Grocery Limited<strong> | Business Portal </strong></h2> -->
+
+                    <h4><strong>Produce Procurement</strong></h4>
+                </div>
+
+            </div>
+        </section><!-- End Breadcrumbs -->
+        <div class="container">
+            <form>
+                <fieldset>
+                    <h6 id="account-header">Enter produce details below and click save</h6>
+                    <div class="row">
+                        <div class="col">
+                            <label>Name of Produce:</label>
+                            <input type="text" value="" />
+                        </div>
+                        <div class="col">
+                            <label>Type of Produce:</label>
+                            <input type="text" value="" onblur='validateUser(2, 12, this, errorname)'/>
+                            <span id="errorname"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Date:</label>
+                            <input type="text" value="" />
+                        </div>
+                        <div class="col">
+                            <label>Time of produce:</label>
+                            <input type="text" value="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Tonnage in Kgs:</label>
+                            <input type="text" value="" />
+                        </div>
+                        <div class="col">
+                            <label>Branch Name:</label>
+                            <input type="text" value="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Dealer's Name:</label>
+                            <input type="text" value="" />
+                        </div>
+                        <div class="col">
+                            <label>Phone Contact:</label>
+                            <input type="text" value="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Buying Price:</label>
+                            <input type="text" value="" />
+                        </div>
+                        <div class="col">
+                            <label>Selling Price:</label>
+                            <input type="text" value="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label></label>
+                            <button>SAVE</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!-- ======= Footer ======= -->
+
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="assets/kgl/aos/aos.js"></script>
+        <script src="assets/kgl/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/kgl/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/kgl/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/kgl/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/kgl/php-email-form/validate.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+        <script src='/formVal/account.js'></script>
+</body>
+
+</html>

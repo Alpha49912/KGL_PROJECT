@@ -2,7 +2,7 @@ const express = require('express'),
     path = require('path'),
     mongoose = require('mongoose'),
     passport = require('passport');
-    require('dotenv').config();
+require('dotenv').config();
 
 
 // Express Session
@@ -23,10 +23,13 @@ const managerlist = require("./routes/managerlist");
 const productRoutes = require("./routes/productroutes");
 
 
-const Manager = require("./models/Manager");
+
+
+const User = require("./models/User");
 
 // Database
 const config = require('./config/database');
+const { appendFile } = require('fs');
 
 //Initialising server
 const server = express();
@@ -54,19 +57,21 @@ server.use(express.static(path.join(__dirname, 'public')));
 server.use(expressSession);
 
 //configuring passport middleware
-passport.use(Manager.createStrategy());
-passport.serializeUser(Manager.serializeUser());
-passport.deserializeUser(Manager.deserializeUser());
+server.use(passport.initialize());
+passport.use(passport.session());
+passport.use(User.createStrategy());
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 // Routing
+server.use('/', loginRoutes);
 server.use('/register', registerRoutes);
-server.use('/login', loginRoutes);
 server.use('/procurement', dashboardRoute);
 server.use('/managers', managerlist);
-server.use('/', loginRoutes);
 server.use('/products', productRoutes);
 server.use('/list', productRoutes);
 server.use('/edit_product', productRoutes);
+
 
 
 
